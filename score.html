@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="imgs\icon64.png">
+	<title>Манчкин</title>
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="score.css">
+	<link rel="stylesheet" href="footer.css">
+	<script src="score.js"></script>
+</head>
+<body>
+
+	<header>
+	
+		<h1>Манчкин</h1>
+		
+		<nav id = "menu" >
+			<ul>
+				<li><a href="main.html">Главная</a></li>
+				<li><a href="rules.html">Правила</a></li>
+				<li><a href="cards.html">Карты</a></li>
+				<li><a href="strats.html">Стратегии игроков</a></li>
+				<li><a href="score.html">Подсчет очков</a></li>
+			</ul>
+		</nav>
+		
+		
+		
+		<div class="wrapper">
+			<input type="checkbox" id="check-menu">
+			<label for="check-menu"></label>
+			<div class="burger-line first"></div>
+			<div class="burger-line second"></div>
+			<div class="burger-line third"></div>
+			<div class="burger-line fourth"></div>
+			<nav class="burger-menu">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="rules.html">Правила</a></li>
+					<li><a href="cards.html">Карты</a></li>
+					<li><a href="strats.html">Стратегии игроков</a></li>
+					<li><a href="score.html">Подсчет очков</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<a>Вход / Регистрация</a>
+		
+	</header>
+
+	
+	<main>
+		<section id="m1">
+		
+			<input type="checkbox" id="check1" class="check">
+			<label for="check1"></label>
+			
+			<div class="front">
+				<input type="text" id="name1" name="name1" required minlength="1" maxlength="12" size="12" value="Игрок 1"/>
+				
+				<div class="string">
+					<button name="level_minus1" type="button" onclick="level_minus(1)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus1" type="button" onclick="level_plus(1)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus1" type="button" onclick="stuff_minus(1)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus1" type="button" onclick="stuff_plus(1)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+		</section>
+		
+		<section id="m2">
+			<input type="checkbox" id="check2" class="check">
+			<label for="check2"></label>
+			
+			<div class="front">
+				<input type="text" id="name2" name="name2" required minlength="1" maxlength="12" size="12" value="Игрок 2"/>
+				
+				<div class="string">
+					<button name="level_minus2" type="button" onclick="level_minus(2)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus2" type="button" onclick="level_plus(2)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus2" type="button" onclick="stuff_minus(2)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus2" type="button" onclick="stuff_plus(2)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m3">
+			<input type="checkbox" id="check3" class="check">
+			<label for="check3"></label>
+			
+			<div class="front">
+				<input type="text" id="name3" name="name3" required minlength="1" maxlength="12" size="12" value="Игрок 3"/>
+				
+				<div class="string">
+					<button name="level_minus3" type="button" onclick="level_minus(3)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus3" type="button" onclick="level_plus(3)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus1" type="button" onclick="stuff_minus(3)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus1" type="button" onclick="stuff_plus(3)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m4">
+			<input type="checkbox" id="check4" class="check">
+			<label for="check4"></label>
+			
+			<div class="front">
+				<input type="text" id="name4" name="name4" required minlength="1" maxlength="12" size="12" value="Игрок 4"/>
+				
+				<div class="string">
+					<button name="level_minus4" type="button" onclick="level_minus(4)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus4" type="button" onclick="level_plus(4)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus4" type="button" onclick="stuff_minus(4)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus4" type="button" onclick="stuff_plus(4)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m5">
+			<input type="checkbox" id="check5" class="check">
+			<label for="check5"></label>
+			
+			<div class="front">
+				<input type="text" id="name5" name="name5" required minlength="1" maxlength="12" size="12" value="Игрок 5"/>
+				
+				<div class="string">
+					<button name="level_minus5" type="button" onclick="level_minus(5)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus5" type="button" onclick="level_plus(5)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus5" type="button" onclick="stuff_minus(5)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus5" type="button" onclick="stuff_plus(5)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		<section id="m6">
+			<input type="checkbox" id="check6" class="check">
+			<label for="check6"></label>
+			
+			<div class="front">
+				<input type="text" id="name6" name="name6" required minlength="1" maxlength="12" size="12" value="Игрок 6"/>
+				
+				<div class="string">
+					<button name="level_minus6" type="button" onclick="level_minus(6)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus6" type="button" onclick="level_plus(6)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus6" type="button" onclick="stuff_minus(6)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus6" type="button" onclick="stuff_plus(6)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m7">
+		
+			<input type="checkbox" id="check7" class="check">
+			<label for="check7"></label>
+			
+			<div class="front">
+				<input type="text" id="name7" name="name7" required minlength="1" maxlength="12" size="12" value="Игрок 7"/>
+				
+				<div class="string">
+					<button name="level_minus7" type="button" onclick="level_minus(7)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus7" type="button" onclick="level_plus(7)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus7" type="button" onclick="stuff_minus(7)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus7" type="button" onclick="stuff_plus(7)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+		</section>
+		
+		<section id="m8">
+			<input type="checkbox" id="check8" class="check">
+			<label for="check8"></label>
+			
+			<div class="front">
+				<input type="text" id="name8" name="name8" required minlength="1" maxlength="12" size="12" value="Игрок 8"/>
+				
+				<div class="string">
+					<button name="level_minus8" type="button" onclick="level_minus(8)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus8" type="button" onclick="level_plus(8)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus8" type="button" onclick="stuff_minus(8)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus8" type="button" onclick="stuff_plus(8)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m9">
+			<input type="checkbox" id="check9" class="check">
+			<label for="check9"></label>
+			
+			<div class="front">
+				<input type="text" id="name9" name="name9" required minlength="1" maxlength="12" size="12" value="Игрок 9"/>
+				
+				<div class="string">
+					<button name="level_minus9" type="button" onclick="level_minus(9)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus9" type="button" onclick="level_plus(9)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus9" type="button" onclick="stuff_minus(9)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus9" type="button" onclick="stuff_plus(9)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m10">
+			<input type="checkbox" id="check10" class="check">
+			<label for="check10"></label>
+			
+			<div class="front">
+				<input type="text" id="name10" name="name10" required minlength="1" maxlength="12" size="12" value="Игрок 10"/>
+				
+				<div class="string">
+					<button name="level_minus10" type="button" onclick="level_minus(10)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus10" type="button" onclick="level_plus(10)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus10" type="button" onclick="stuff_minus(10)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus10" type="button" onclick="stuff_plus(10)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		
+		<section id="m11">
+			<input type="checkbox" id="check11" class="check">
+			<label for="check11"></label>
+			
+			<div class="front">
+				<input type="text" id="name11" name="name11" required minlength="1" maxlength="12" size="12" value="Игрок 11"/>
+				
+				<div class="string">
+					<button name="level_minus11" type="button" onclick="level_minus(11)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus11" type="button" onclick="level_plus(11)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus11" type="button" onclick="stuff_minus(11)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus11" type="button" onclick="stuff_plus(11)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+		<section id="m12">
+			<input type="checkbox" id="check12" class="check">
+			<label for="check12"></label>
+			
+			<div class="front">
+				<input type="text" id="name12" name="name12" required minlength="1" maxlength="12" size="12" value="Игрок 12"/>
+				
+				<div class="string">
+					<button name="level_minus12" type="button" onclick="level_minus(12)">-</button>
+					<h4>Уровень: </h4>
+					<h4 class="level">1</h4>
+					<button name="level_plus12" type="button" onclick="level_plus(12)">+</button>
+				</div>
+				
+				<div class="string">
+					<button name="stuff_minus12" type="button" onclick="stuff_minus(12)">-</button>
+					<h4>Шмотки: </h4>
+					<h4 class="stuff">0</h4>
+					<button name="stuff_plus12" type="button" onclick="stuff_plus(12)">+</button>
+				</div>
+				
+				<div class="string">
+					<h4>Сила: </h4>
+					<h4 class="power">1</h4>
+				</div>
+			</div>
+			<div class="back"></div>
+
+		</section>
+	</main>
+	
+	<footer>
+		<address>
+			<a class="mail" href="mailto:mr.evgenii.b@yandex.ru"><img src="imgs\mail.png"></a>
+			<a class="youtube" href=""><img src="imgs\youtube.png"></a>
+			<a class="teleg" href=""><img src="imgs\telegram.png"></a>
+			<a class="whats" href=""><img src="imgs\whatsapp.png"></a>
+		</address>
+		<small>© copyright 2023 Баширов Евгений</small>
+	</footer>
+</body>
+</html>

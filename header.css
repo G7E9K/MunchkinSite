@@ -1,0 +1,168 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: linear-gradient(45deg,  #fbe9d5, #fecd93);
+	/*background-color: #fecd93; /*main color*/
+	font-family: "Caveat", "Comic Sans MS", sans-serif;
+	color: #331d0e; /*dark color*/
+}
+a, a:visited, a:focus, a:hover{
+	text-decoration: none;
+	color: #fbe9d5; /*light color*/
+}
+
+header{
+	position: fixed;
+	width: 96vw;
+	padding: 1vw;
+	padding-right: 2vw;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #331d0e;
+	color: #fbe9d5; /*light color*/
+	z-index: 4;
+}
+
+#menu ul{
+	display: flex;
+	justify-content: center;
+}
+
+#menu ul li{
+	margin-right: 20px;
+	list-style-type: none;
+}
+
+#menu ul li a{
+	position: relative;
+}
+
+nav ul li a::after{
+	position: absolute;
+	background: #fbe9d5;
+	content: ' ';
+	height: 1.5px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+nav ul li a:hover::after{
+	opacity: 1;
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+
+
+
+
+
+
+
+
+.wrapper{
+	position: relative;
+	margin-left:20px;
+	height: 40px;
+	width: 400px;
+	display: none;
+}
+#check-menu{
+	display: none;
+}
+.wrapper label{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 2;
+}
+.burger-line{
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	width: 35px;
+	height: 4px;
+	border-radius: 2px 2px;
+	background-color: #fbe9d5;
+	transition: .5s all;
+}
+.second, .third{
+	top: 18px;
+}
+.fourth{
+	top: 28px;
+}
+.burger-menu{
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	opacity: 0;
+	transition: .5s all;
+}
+
+.burger-menu ul{
+	padding:0;
+	margin:0;
+}
+.burger-menu li{
+	display:block;
+	width:100%;
+	color: #fbe9d5;
+	height: 2em;
+	padding-top: .5em;
+	text-decoration: none;
+	border: 2px solid black;
+	border-top: none;
+	background-color: #331d0e;
+}
+
+#check-menu:checked ~ .burger-menu{
+	opacity: 1;
+}
+#check-menu:checked ~ .first{
+	opacity: 0;
+}
+#check-menu:checked ~ .second{
+	transform: rotate(45deg);
+}
+#check-menu:checked ~ .third{
+	transform:rotate(-45deg);
+}
+#check-menu:checked ~ .fourth{
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+	#menu{
+		display:none;
+	}
+	.wrapper{
+		display: block;
+	}
+	header h1{
+		display: none;
+	}
+}

@@ -1,6 +1,9 @@
 *{
 	padding: 0;
 	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 body{
 	background: linear-gradient(45deg,  #fbe9d5, #fecd93);
@@ -15,7 +18,7 @@ a, a:visited, a:focus, a:hover{
 
 header{
 	position: fixed;
-	width: 96vw;
+	width: 100%;
 	padding: 1vw;
 	padding-right: 2vw;
 	left: 0;
@@ -162,7 +165,7 @@ nav ul li a:hover::after{
 	.wrapper{
 		display: block;
 	}
-	header h1{
+	/*header h1{
 		display: none;
-	}
+	}*/
 }

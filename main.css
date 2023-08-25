@@ -18,12 +18,11 @@ section{
 	text-align: center;
 }
 section img{
-	max-height: 40%;
-	max-width: 100%;
+	max-width: 80%;
+	max-height: auto;
 }
 
 #p1 {
-	background-color: #fecd93; /*main color*/
    grid-row-start: 1;
    grid-column-start: 1;
 
@@ -50,13 +49,17 @@ section img{
    
 }
 #p4 {
-	background-color: #fecd93;
    grid-row-start: 5;
    grid-column-start: 3;
 
    grid-row-end: 8;
    grid-column-end: 5;
    
+}
+
+
+.dark{
+	background-color: #fecd93;
 }
 
 @media screen and (max-width: 1000px){

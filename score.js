@@ -12,8 +12,9 @@ function level_minus(i){
 	var elem = document.getElementsByClassName("level")[i-1];
 	if(elem.textContent!=1){
 		elem.textContent = Number(elem.textContent) - 1;
+		power_minus(i);
 	}
-	power_minus(i);
+	
 }
 
 function stuff_plus(i){

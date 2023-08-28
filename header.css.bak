@@ -95,7 +95,7 @@ nav ul li a:hover::after{
 .burger-line{
 	position: absolute;
 	top: 8px;
-	left: 10px;
+	right: 10px;
 	width: 35px;
 	height: 4px;
 	border-radius: 2px 2px;

@@ -109,7 +109,7 @@ nav ul li a:hover::after{
 	top: 28px;
 }
 .burger-menu{
-	display: block;
+	display: none;
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -136,6 +136,7 @@ nav ul li a:hover::after{
 }
 
 #check-menu:checked ~ .burger-menu{
+	display: block;
 	opacity: 1;
 }
 

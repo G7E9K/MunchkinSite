@@ -160,7 +160,7 @@ nav ul li a:hover::after{
 
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 720px){
 	#menu{
 		display:none;
 	}
